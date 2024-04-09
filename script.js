@@ -1,10 +1,8 @@
 console.log("starting with javascript")
 document.querySelector(".hamburger").addEventListener ("click" , ()=>{
-  console.log("working")
   document.querySelector(".left").style.left = "0px"
 })
 document.querySelector(".cross").addEventListener ("click" , ()=>{
-  console.log("working")
   document.querySelector(".left").style.left = "-100%"
 })
 
@@ -150,7 +148,7 @@ async function main() {
     // The duration variable now holds the duration (in seconds) of the audio clip
     console.log(audiosrc2)
     document.querySelector(".songname").innerHTML = audiosrc4
-    
+    document.title= audiosrc4
   });
   // playbar functionality //
   document.querySelector(".playbar").addEventListener("click", e => {
@@ -177,14 +175,14 @@ async function main() {
   play_gen.addEventListener("click", () => {
     if (currentsong.paused) {
       currentsong.play()
-      document.querySelector(".playgen").innerHTML = `<img src="pause.svg" alt="" style="
+      document.querySelector(".playgen").innerHTML = `<img src="ASSETS/pause.svg" alt="" style="
       width: 25px;
       height: 22px;
   ">`
     }
     else {
       currentsong.pause()
-      document.querySelector(".playgen").innerHTML = `<img src="play.svg" alt="" style="
+      document.querySelector(".playgen").innerHTML = `<img src="ASSETS/play.svg" alt="" style="
       width: 25px;
       height: 22px;
   ">`
@@ -244,8 +242,6 @@ async function main() {
 }
 main()
 
-
-//login-signup portal
 
 
 
