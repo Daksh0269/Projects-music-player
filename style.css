@@ -496,7 +496,8 @@ position: relative;
     z-index:1;
 }
 .search_right{
-    width: 50%;
+    width: 30%;
+    padding-left: 0px;
 }
 .hamburger {
     display: block;
@@ -519,7 +520,7 @@ position: relative;
 }
   }
 
-@media (max-width:813px){
+@media (max-height:400px), (max-width:370px){
     .search_right{
         display: none;
         width: 30%;
